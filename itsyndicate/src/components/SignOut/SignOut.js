@@ -4,6 +4,9 @@ import {auth, provider} from '../../firebase';
 import { useStateValue } from '../../StateProvider';
 import { actionTypes } from '../../reducer';
 
+import { makeStyles } from '@material-ui/core/styles';
+import Button from '@material-ui/core/Button';
+
 
 function SignOut() {
 
@@ -18,7 +21,12 @@ function SignOut() {
         })
     }
     return (
-        <button className="sign-out" onClick={signOut}>Sign Out</button>
+        <>
+            <Button variant="outlined" color="primary" onClick={signOut}>
+                SignOut
+            </Button>
+      </>
+        // <button className="sign-out" onClick={signOut}>Sign Out</button>
     )
 }
 

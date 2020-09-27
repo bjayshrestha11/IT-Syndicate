@@ -54,8 +54,8 @@ main::-webkit-scrollbar-thumb {
   background: #6649b8;
 }
 
-form {
-  height: 10vh;
+/* form {
+  height: 9vh;
   position: fixed;
   bottom: 0;
   background-color: rgb(24, 23, 23);
@@ -83,7 +83,7 @@ input {
 }
 
 button {
-  background-color: #282c34; /* Green */
+  background-color: #282c34; 
   border: none;
   color: white;
   padding: 15px 32px;
@@ -97,15 +97,15 @@ button {
 button:disabled {
   opacity: 0.5;
   cursor: not-allowed;
-}
+} */
 
 
-.sign-in {
+/* .sign-in {
   color: #282c34;
   background: white;
   max-width: 400px;
   margin: 0 auto;
-}
+} */
 
 
 
@@ -115,7 +115,7 @@ ul, li {
   list-style: none;
 }
 
-p {
+/* p {
   max-width: 500px;
   margin-bottom: 12px;
   line-height: 24px;
@@ -124,9 +124,9 @@ p {
   position: relative;
   color: white;
   text-align: center;
-}
+} */
 
-.message {
+/* .message {
   display: flex;
   align-items: center;
 }
@@ -151,4 +151,4 @@ img {
   height: 40px;
   border-radius: 50%;
   margin: 2px 5px;
-}
+} */

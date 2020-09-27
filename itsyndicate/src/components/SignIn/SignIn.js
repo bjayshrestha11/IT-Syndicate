@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './SignIn.css';
+
 import {auth, provider} from '../../firebase';
 import { useStateValue } from '../../StateProvider';
 import { actionTypes } from '../../reducer';

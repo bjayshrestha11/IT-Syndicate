@@ -4,6 +4,7 @@ import db, { auth } from '../../firebase';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 import firebase from 'firebase/app';
 
+import './ChatRoom.css';
 import SendIcon from '@material-ui/icons/Send';
 
 function ChatRoom() {
@@ -33,25 +34,26 @@ function ChatRoom() {
     dummy.current.scrollIntoView({ behavior: 'smooth' });
   }
 
-  return (<>
-    <main>
+  return (
+  <div className="chatRoom">
+      <main>
 
-      {messages && messages.map(msg => <ChatMessage key={msg.id} message={msg} />)}
+        {messages && messages.map(msg => <ChatMessage key={msg.id} message={msg} />)}
 
-      <span ref={dummy}></span>
+        <span ref={dummy}></span>
 
-    </main>
+      </main>
 
-    <form onSubmit={sendMessage}>
+      <form onSubmit={sendMessage}>
 
-      <input value={formValue} onChange={(e) => setFormValue(e.target.value)} placeholder="Type a message..." />
+        <input value={formValue} onChange={(e) => setFormValue(e.target.value)} placeholder="Type a message..." />
 
-  <button type="submit" disabled={!formValue}>
-    <SendIcon />
-  </button>
+        <button type="submit" disabled={!formValue}>
+          <SendIcon />
+        </button>
 
-    </form>
-  </>)
+      </form>
+  </div>)
 }
 
 export default ChatRoom
